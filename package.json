@@ -2,21 +2,46 @@
   "name": "translanders",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mikejackowski.github.io/mischievouspenguins",
   "dependencies": {
+    "@fortawesome/fontawesome-common-types": "^0.2.22",
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.2",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "@types/styled-components": "^4.1.18",
+    "gh-pages": "^2.1.1",
+    "polished": "^3.4.1",
     "react": "^16.9.0",
+    "react-countdown-now": "^2.1.1",
     "react-dom": "^16.9.0",
+    "react-iframe": "^1.8.0",
     "react-scripts": "3.1.1",
+    "styled-components": "^4.3.2",
     "typescript": "3.5.3"
+  },
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "tags": [
+          "styled",
+          "css",
+          "sty"
+        ]
+      }
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +57,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
