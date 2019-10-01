@@ -2,7 +2,7 @@
   "name": "translanders",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mikejackowski.github.io/mischievouspenguins",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-common-types": "^0.2.22",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
